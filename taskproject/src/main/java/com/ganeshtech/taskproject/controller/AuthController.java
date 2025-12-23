@@ -38,6 +38,7 @@ public class AuthController {
 	}
 
 	@PostMapping("/login")
+	// api login from web
 	public ResponseEntity<JWTAuthResponse> loginUser(@RequestBody LoginDto loginDto) {
 
 		Authentication authentication = authenticationManager
